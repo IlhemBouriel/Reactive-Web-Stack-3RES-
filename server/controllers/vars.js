@@ -16,11 +16,13 @@ router.route('/')
     });
   })
   .post(function(req,res) {
+    console.log("post received");
     // Code to add new polls.
     var varsObject = new varModel();
     // Calling our model function.
     // We nee to validate our payload here.
     varsObject.addNewVars(req.body,function(err,varResponse) {
+      console.log('body => '+req.body);
       if(err) {
         return res.json({"responseCode" : 1, "responseDesc" : varResponse});
       }

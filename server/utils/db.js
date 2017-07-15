@@ -28,13 +28,25 @@ class db {
         rethinkdb.db('sofrecom_qualif').tableCreate('servers').run(connection,function(err,result) {
           connection.close();
           if(err) {
-            console.log("table already created");
+            console.log("table servers already created");
           } else {
-            console.log("Created new table");
+            console.log("Created new table servers");
           }
           callback(null,"Database is setup successfully");
         });
       }
+      /*,
+      function(connection,callback) {
+        rethinkdb.db('sofrecom_qualif').tableCreate('vars').run(connection,function(err,result) {
+          connection.close();
+          if(err) {
+            console.log("table vars already created");
+          } else {
+            console.log("Created new table vars");
+          }
+          callback(null,"Database is setup successfully");
+        });
+      }*/
     ],function(err,data) {
       console.log(data);
     });

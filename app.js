@@ -2,7 +2,7 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var app = express();
 var http = require('http').Server(app);
-var db = require('./server/models/db');
+var db = require('./server/utils/db');
 
 /**
   Adding the controllers.

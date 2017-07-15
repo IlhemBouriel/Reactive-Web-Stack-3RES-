@@ -3,10 +3,11 @@ var rethinkdb = require('rethinkdb');
 var db = require('../utils/db');
 var async = require('async');
 
-class vars {
+class servers {
   
 
-  addNewVars(varData,callback) {
+  addNewServer(varData,callback) 
+  {
     async.waterfall([
       function(callback) {
         var db_instance = new db();
@@ -18,9 +19,9 @@ class vars {
         });
       },
       function(connection,callback) {
-        rethinkdb.table('vars').insert({
-            "name" : varData.name,
-            "values" : varData.values
+        rethinkdb.table('servers').insert({
+            "server" : varData.server,
+            "variables" : varData.variables
         }).run(connection,function(err,result) {
           connection.close();
           if(err) {
@@ -35,7 +36,7 @@ class vars {
   }
 
 
-  getAllVars(callback) {
+  getAllServer(callback) {
     async.waterfall([
       function(callback) {
         var db_instance = new db();
@@ -47,7 +48,7 @@ class vars {
         });
       },
       function(connection,callback) {
-        rethinkdb.table('vars').run(connection,function(err,cursor) {
+        rethinkdb.table('servers').run(connection,function(err,cursor) {
           connection.close();
           if(err) {
             return callback(true,"Error fetching polls to database");
@@ -67,5 +68,5 @@ class vars {
 
 }
 
-module.exports = vars;
+module.exports = servers;
 
