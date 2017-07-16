@@ -1,0 +1,21 @@
+2017-07-16T18:30:07.655624000 1.040219s notice: Recursively removing directory /home/ilhem/Desktop/stage/stage/rethinkdb_data/tmp
+2017-07-16T18:30:07.804604186 1.189198s notice: Initializing directory /home/ilhem/Desktop/stage/stage/rethinkdb_data
+2017-07-16T18:30:07.817539219 1.202134s info: Creating a default database for your convenience. (This is because you ran 'rethinkdb' without 'create', 'serve', or '--join', and the directory '/home/ilhem/Desktop/stage/stage/rethinkdb_data' did not already exist or is empty.)
+2017-07-16T18:30:07.817921675 1.202516s notice: Running rethinkdb 2.3.5~0xenial (GCC 5.3.1)...
+2017-07-16T18:30:07.821095785 1.205692s notice: Running on Linux 4.4.0-53-generic x86_64
+2017-07-16T18:30:07.821211123 1.205805s notice: Loading data from directory /home/ilhem/Desktop/stage/stage/rethinkdb_data
+2017-07-16T18:30:08.469850719 1.854444s info: Automatically using cache size of 3524 MB
+2017-07-16T18:30:08.536743928 1.921338s notice: Listening for intracluster connections on port 29015
+2017-07-16T18:30:08.767660280 2.152254s notice: Listening for client driver connections on port 28015
+2017-07-16T18:30:08.768293835 2.152888s notice: Listening for administrative HTTP connections on port 8080
+2017-07-16T18:30:08.768299815 2.152893s notice: Listening on cluster addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-07-16T18:30:08.768301526 2.152895s notice: Listening on driver addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-07-16T18:30:08.768304301 2.152898s notice: Listening on http addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-07-16T18:30:08.768306030 2.152900s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2017-07-16T18:30:08.768308950 2.152903s notice: Server ready, "ilhem_virtual_machine_6to" 4ade38de-915d-450f-b1f0-9b90e7d9aafa
+2017-07-16T18:30:34.393834955 27.778429s info: Table ab48384b-91db-4142-baaf-f2119f3099f5: Starting a new Raft election for term 1.
+2017-07-16T18:30:34.444568711 27.829163s info: Table ab48384b-91db-4142-baaf-f2119f3099f5: Added replica on this server.
+2017-07-16T18:30:34.505947475 27.890542s info: Table ab48384b-91db-4142-baaf-f2119f3099f5: This server is Raft leader for term 1. Latest log index is 0.
+2017-07-16T18:33:33.806712622 207.191306s info: Table ab6b7556-8d22-4aca-9214-4473e308adb6: Starting a new Raft election for term 1.
+2017-07-16T18:33:33.807433027 207.192027s info: Table ab6b7556-8d22-4aca-9214-4473e308adb6: Added replica on this server.
+2017-07-16T18:33:33.841352879 207.225947s info: Table ab6b7556-8d22-4aca-9214-4473e308adb6: This server is Raft leader for term 1. Latest log index is 0.

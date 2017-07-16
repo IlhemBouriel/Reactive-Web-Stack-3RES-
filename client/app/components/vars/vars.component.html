@@ -1,0 +1,36 @@
+<h1>Vars Section</h1>
+
+    <div class="actor-list">
+        <div *ngFor="let var of vars">
+        <div class="col-md-2">
+             {{var.name}}
+    
+        </div>
+        <div class="col-md-2">
+            {{var.values}}
+        </div>
+       
+        <div class="col-md-2">
+<a href="#" class="btn btn-success">About movies</a>
+
+        </div>
+      <!--  <div class="col-md-6">
+            <div *ngIf="actor.movies.length != 0">
+                <div *ngFor="let movie of actor.movies">
+                    <div *ngFor="let m of movies">
+                            <p *ngIf="m._id == movie">
+                                   {{ m.title }}
+                            </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    -->
+    
+        <div class="col-md-2">
+            <input type="button" value="Delete" class="btn btn-danger">
+        </div>
+        <br><br>
+        </div>
+    </div>
+
